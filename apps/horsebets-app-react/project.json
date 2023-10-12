@@ -1,0 +1,72 @@
+{
+    "name": "horsebets-app-react",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/horsebets-app-react/src",
+    "projectType": "application",
+    "targets": {
+        "build": {
+            "executor": "@nrwl/vite:build",
+            "outputs": ["{options.outputPath}"],
+            "defaultConfiguration": "production",
+            "options": {
+                "outputPath": "dist/apps/horsebets-app-react"
+            },
+            "configurations": {
+                "development": {
+                    "mode": "development"
+                },
+                "production": {
+                    "mode": "production"
+                }
+            }
+        },
+        "serve": {
+            "executor": "@nrwl/vite:dev-server",
+            "defaultConfiguration": "development",
+            "options": {
+                "buildTarget": "horsebets-app-react:build"
+            },
+            "configurations": {
+                "development": {
+                    "buildTarget": "horsebets-app-react:build:development",
+                    "hmr": true
+                },
+                "production": {
+                    "buildTarget": "horsebets-app-react:build:production",
+                    "hmr": false
+                }
+            }
+        },
+        "preview": {
+            "executor": "@nrwl/vite:preview-server",
+            "defaultConfiguration": "development",
+            "options": {
+                "buildTarget": "horsebets-app-react:build"
+            },
+            "configurations": {
+                "development": {
+                    "buildTarget": "horsebets-app-react:build:development"
+                },
+                "production": {
+                    "buildTarget": "horsebets-app-react:build:production"
+                }
+            }
+        },
+        "test": {
+            "executor": "@nrwl/vite:test",
+            "outputs": ["coverage/apps/horsebets-app-react"],
+            "options": {
+                "passWithNoTests": true,
+                "reportsDirectory": "../../coverage/apps/horsebets-app-react"
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/horsebets-app-react/**/*.{ts,tsx,js,jsx}"]
+            }
+        }
+    },
+    "tags": []
+}

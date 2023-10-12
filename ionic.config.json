@@ -1,13 +1,13 @@
 {
-  "defaultProject": "example-app-angular",
+  "defaultProject": "horsebets-app-react",
   "projects": {
-    "example-app-angular": {
-      "name": "example-app-angular",
+    "horsebets-app-react": {
+      "name": "horsebets-app-react",
       "integrations": {
         "capacitor": {}
       },
-      "type": "angular",
-      "root": "apps/example-app-angular"
+      "type": "react",
+      "root": "apps/horsebets-app-react"
     }
   }
 }

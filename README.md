@@ -8,9 +8,9 @@ This repository will give you a great starting point!
 
 1. Clone the repository using 'Use template' (and don't forget to give us a Star / Follow on Github, please!)
 2. Select which framework from 'apps/' folder you are going to use and remove the others if necessary.
-3. Search + Replace all instances of 'example-app-"frameworkName"-e2e' with your app name (important to do this first)
-4. Search + Replace all instances of 'example-app-"frameworkName"' with your app name
-5. Change the folder names for example-app-frameworkName and example-app-frameworkName-e2e to what you named for steps #1 and #2
+3. Search + Replace all instances of 'horsebets-app-"frameworkName"-e2e' with your app name (important to do this first)
+4. Search + Replace all instances of 'horsebets-app-"frameworkName"' with your app name
+5. Change the folder names for horsebets-app-frameworkName and horsebets-app-frameworkName-e2e to what you named for steps #1 and #2
 6. Search + Replace all instances of 'openforge-ionic-monorepo-example' with your project name
 7. Search + Replace 'company-name' with your company name.  This is the NX project scope that allows you to import libraries using @company-name
 
@@ -18,7 +18,7 @@ That's it for the renaming!  Now to test...
 
 ```npm install```
 
-```npx nx run example-app-angular:serve``` (where example-app-angular is the name you replaced with above)
+```npx nx run horsebets-app-react:serve``` (where horsebets-app-react is the name you replaced with above)
 
 You should now load your example app!
 
@@ -55,7 +55,7 @@ Nx supports Vite [Visit Nx Official docs for Vite](https://nx.dev/packages/vite)
 2. Run `cd my-vue-app && npm install`.
 3. Go to `apps/my-vue-app` and create a new `project.json`.
 4. Copy the `properties` from the `project.json` file from `apps/example-vue-app` and paste it inside the new `project.json` file generated for the new Vue application in the step 3.
-5. Inside the new `project.json` file generated, replace all `example-app-vue` instances with the name of your Vue app created in step 1.
+5. Inside the new `project.json` file generated, replace all `horsebets-app-vue` instances with the name of your Vue app created in step 1.
 6. Now you just need to `extends` the `tsconfig.base.json` root file in your `tsconfig.json` Vue application file by adding `"extends": "../../tsconfig.base.json"` at the top of the array.
 
 And that's it! You will be able to run and serve your Vue application by running `nx serve your-app-name` (where your-app-name is the name of the application you created).
@@ -97,7 +97,7 @@ Libraries are shareable across libraries and applications. They can be imported 
 
 ## Development server
 
-Run `npx nx run example-app-angular:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `npx nx run horsebets-app-react:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
